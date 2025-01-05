@@ -67,16 +67,19 @@ https://www.w3schools.com/howto/howto_css_transition_hover.asp
 
 body {
     font-family: 'AuthenticSans', 'Inter', Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
-    background-color: #E1E0DB;
+    /* background-color: #E1E0DB; */
+    background-color: #ecebe9;
     margin: 0;
 }
 
 p {
     font-family: 'Inter';
+    font-weight: 370;
     margin: 0.8rem 0 0.8rem 0;
     line-height: 1.4;
+    color: rgb(117, 117, 117);
 }
 
 a { 
@@ -157,7 +160,9 @@ nav {
 
 /* PROJECT DETAIL -------------------------------------------------------- */
 
-
+.project-header { 
+    margin-bottom: 5rem;
+}
 
 .project-header-image {
     object-fit: cover;
@@ -165,7 +170,7 @@ nav {
     height: 544px;
     margin: 10px auto;
     width: calc(100% - 32px);
-    max-width: 1052px;
+    max-width: 1150px;
     display: block;
 }
 
@@ -185,9 +190,10 @@ h1, #project-title { /* h1 */
 }
 
 h2, #project-subtitle { /* h2 */
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'AuthenticSANS';
     font-weight: 400;
-    font-size: 28px;
+    font-size: 24px;
     margin: .4rem 0 1.4rem 0;
     max-width: 750px;
     line-height: 1.4;
@@ -203,9 +209,15 @@ h2, #project-subtitle { /* h2 */
     }
 } */
 
+.small-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
 h4, .small-section-title { /* h4 */
-    font-size: 19px;
-    margin: 1rem 0 -0.5rem 0;
+    font-size: 1.1rem;
+    margin: 1rem 0 -0.6rem 0;
     font-weight: 700;
 }
 
@@ -244,8 +256,19 @@ h4, .small-section-title { /* h4 */
 /* PROJECT SOLUTION -------------------------------------------------------- */
 
 .solution {
-    background-color: #D3D1C7;
-    padding: 1.5rem 0;
+    /* background-color: #D3D1C7; */
+    background-color: #1e1e1e;
+    padding: 1.5rem 0 1rem 0;
+    color: rgb(221, 221, 221);
+}
+
+.solution .small-section-title,
+.solution .section-title {
+    color: rgb(221, 221, 221);
+}
+
+.solution p {
+    color: rgb(159, 159, 159);
 }
 
 .title-with-description {
@@ -266,19 +289,20 @@ h3, .section-title { /* h3 */
 
 .section-description {
     margin: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    gap: 1rem;
 }
 
 .vertical-mockups {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    margin: 100px;
+    margin: 100px auto;
 }
 
 .iphone-mockup-and-text-right {
-    /* margin: 100px 0; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -304,6 +328,26 @@ h3, .section-title { /* h3 */
     max-width: 400px;;
 }
 
+.full-width-image {
+    width: 100%;
+}
+
+.two-large-images {
+    display: flex;
+    flex-direction: row; 
+    gap: 1%;
+    justify-content: center;
+    align-items: flex-start;
+    width: 96%;
+    margin: 0 auto; /* Centers the container within the window */
+}
+
+.two-large-images img {
+    width: 50%;
+    height: auto; 
+    object-fit: cover; /* Ensures the images scale well */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
 
 /* 
 .project-detail-col {
